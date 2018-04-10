@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mancala</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<section id="game" class="world">
+    <h1>MANCALA</h1>
+    <div>
+        <h1 class="second">Second Player</h1>
+    </div>
+    <section class="board">
+        <section class="rowSecond">
+            <table id="playerTwo" class="player-row-container" border="1">
+                <tr>
+                    <td rowspan="2" class="home">{{board[0]}}</td>
+                    <td class="circle" ng-click='move(13)'>{{board[13]}}</td>
+                    <td class="circle" ng-click='move(12)'>{{board[12]}}</td>
+                    <td class="circle" ng-click='move(11)'>{{board[11]}}</td>
+                    <td class="circle" ng-click='move(10)'>{{board[10]}}</td>
+                    <td class="circle" ng-click='move(9)'>{{board[9]}}</td>
+                    <td class="circle" ng-click='move(8)'>{{board[8]}}</td>
+                    <td rowspan="2" class="home">{{board[7]}}</td>
+                </tr>
+                <tr>
+                    <td class="circle" ng-click="move(1)">{{board[1]}}</td>
+                    <td class="circle" ng-click='move(2)'>{{board[2]}}</td>
+                    <td class="circle" ng-click='move(3)'>{{board[3]}}</td>
+                    <td class="circle" ng-click='move(4)'>{{board[4]}}</td>
+                    <td class="circle" ng-click='move(5)'>{{board[5]}}</td>
+                    <td class="circle" ng-click='move(6)'>{{board[6]}}</td>
+                </tr>
+            </table>
+        </section>
+        <div class="right">
+            <h1 class="first">First Player</h1>
+        </div>
+
+    </section>
+    <div class="message"><h2>{{msg}} </h2>
+
+    </div>
+
+</section>
+</body>
+</html>
+
